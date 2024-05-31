@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.top {
+    background-color: rgb(110, 110, 224);
+    padding: 10px;
+    color: white;
+    text-align: center;
+}
+
+.container {
+    padding: 10px;
+    
+}
+
+    
+
+.container .content-container {
+    width: 25%;
+    padding: 10px;
+    margin: 44px;
+    text-align: justify;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    display: inline-block;
+vertical-align: top;
+ 
+}
+.content-container textarea
+{
+    background: transparent;
+    width: 95%;
+    padding: 2px;
+    margin: 2px;
+   
+    font-size: 20px;
+    color: white;
+    height: 100px;
+    border: none;
+    overscroll-behavior: none;
+
+
+   
+}
+
+.content-container button {
+    background-color: rgb(110, 110, 224);
+    color: white;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 8px;
+    border: none;
+   
+}
+
+.content-container h2 {
+    color: rgb(110, 110, 224);
+}
+
+.add-button {
+    background-color: rgb(110, 110, 224);
+    color: white;
+    border-radius: 50%;
+    border: none;
+    font-size: 40px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.overlay {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    opacity: 0.8;
+    top: 0;
+    left: 0;
+    background-color: black;
+    z-index: 1;
+    display: none;
+}
+
+.boxopen {
+    background-color: rgb(7, 7, 236);
+    color: white;
+    width: 40%;
+    padding: 40px;
+    border-radius: 10px;
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    z-index: 2;
+    display: none;
+}
+
+.boxopen input, .boxopen textarea {
+    background: transparent;
+    width: 90%;
+    padding: 5px;
+    margin: 5px;
+    border: none;
+    font-size: 20px;
+    color: white;
+    border-bottom: solid white 2px;
+}
+
+.boxopen textarea {
+    border: solid white 2px;
+}
+
+.boxopen input::placeholder, .boxopen textarea::placeholder {
+    color: white;
+}
+
+.boxopen button {
+    background-color: rgb(6, 6, 167);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 5px;
+}
+@media only screen and (max-width: 600px) {
+    .container .content-container {
+        width: 100%; 
+        margin: 10px 0;
+        display: block; 
+    }
+
+    .boxopen {
+        width: 90%; 
+        left: 5%; 
+        top: 10%; 
+    }
+}

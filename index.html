@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="some.css">
+    
+</head>
+<body>
+    <div class="top">
+        <h2>Admission/counseling  Report 2024</h2>
+    </div>
+    <div class="container">
+        <div class="content-container">
+            <h2>Rajadurai M</h2>
+            <h3>Computer Science Engineering</h3>
+            <textarea row="5" col="50">Sanmuga college of Engineering in sangakiri,salem(Dt),Admission date 07/04/2024</textarea>
+            <button onclick="deletefun(event)">Delete</button>
+        </div>
+       
+        
+    </div>
+    <div class="overlay"></div>
+    <div class="boxopen">
+        <h2>Add Student Details</h2>
+        <form>
+            <input type="text" placeholder="Student Name" id="book-title">
+            <input type="text" placeholder="course" id="book-author">
+            <textarea placeholder="college & Purpose of Enquiry" id="short-description"></textarea>
+            <button id="add">ADD</button>
+            <button id="cancel">CANCEL</button>
+        </form>
+    </div>
+    <button class="add-button">+</button>
+    <script src="./para.js"></script>
+</body>
+</html>
